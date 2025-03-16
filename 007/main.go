@@ -10,6 +10,13 @@ package main
 import "fmt"
 
 func main () {
-	// Here goes your code
-	fmt.Printf("...")
+	var name, surname string
+
+	fmt.Println("Please enter your name:")
+	fmt.Scanln(&name)
+
+	fmt.Println("Please enter your surname:")
+	fmt.Scanln(&surname)
+
+	fmt.Printf("Hello, %s %s!", name, surname)
 }
