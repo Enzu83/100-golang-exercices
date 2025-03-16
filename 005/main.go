@@ -7,7 +7,7 @@ package main
 import "fmt"
 
 func main () {
-	// Here goes your code
-	var string1 string
-	// ...
+	helloWorld := "Hello world!"
+
+	fmt.Println(helloWorld[3])
 }

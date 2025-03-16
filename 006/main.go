@@ -20,5 +20,5 @@ func main () {
 	weight = 70.12
 
 	// Here goes your code
-	fmt.Printf("...")
+	fmt.Printf("My name is %s, I'm %d years old and I weigh %f pounds. Legally speaking, I'm %t.", name, age, weight, legal)
 }

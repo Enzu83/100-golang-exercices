@@ -6,5 +6,7 @@ package main
 import "fmt"
 
 func main () {
-	// Here goes your code
+	fmt.Println("My name is Maxime Chambre.")
+	fmt.Println("I'm currently studying at CentraleSupélec near Paris.")
+	fmt.Println("And I'm learning Go for my upcoming internship.")
 }

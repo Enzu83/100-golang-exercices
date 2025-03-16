@@ -9,5 +9,5 @@ package main
 import "fmt"
 
 func main () {
-	// Here is your code
+	fmt.Println("Hello world!")
 }
