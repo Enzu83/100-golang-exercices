@@ -5,8 +5,19 @@ package main
 
 import "os"
 
+func check(e error) {
+	if e != nil {
+		panic(e)
+	}
+}
 
-func main () {
-	// Here goes your code
-	
+func main() {
+	f, err := os.Create("write")
+	check(err)
+
+	countries := []string{"France", "Germany", "Spain", "United Kingdom", "Japan"}
+
+	for _, country := range countries {
+		f.WriteString(country + "\n")
+	}
 }
