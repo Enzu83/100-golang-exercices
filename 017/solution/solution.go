@@ -9,7 +9,7 @@ import "io/ioutil"
 
 func main () {
 	// Here goes your code
-	b, err := ioutil.ReadFile("read.go")
+	b, err := ioutil.ReadFile("read")
     // can file be opened?
     if err != nil {
       fmt.Print(err)
