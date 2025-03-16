@@ -6,6 +6,6 @@ package main
 import "fmt"
 
 func main () {
-	// Here goes your code
-	fmt.Printf("...")
+	array := [10]int8{0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+	fmt.Println(array)
 }

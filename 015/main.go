@@ -10,6 +10,11 @@ import "fmt"
 func main () {
 	init := 30
 	end  := 50
-	// Here goes your code
 	
+	i := init
+
+	for i <= end {
+		fmt.Println(i)
+		i++
+	}
 }

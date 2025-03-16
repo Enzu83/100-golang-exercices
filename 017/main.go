@@ -3,10 +3,27 @@
 
 package main
 
-import "fmt"
-import "io/ioutil"
+import (
+	"fmt"
+	"os"
+	"bufio"
+)
+
+func check(e error) {
+	if e != nil {
+		panic(e)
+	}
+}
 
 func main () {
-	// Here goes your code
+	f, err := os.Open("read")
+	check(err)
+	defer f.Close()
+
+	scanner := bufio.NewScanner(f)
 	
+	for scanner.Scan() {
+		fmt.Println(scanner.Text())
+	}
+	check(scanner.Err())
 }

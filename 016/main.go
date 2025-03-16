@@ -3,10 +3,18 @@
 
 package main
 
-import "fmt"
-import "os"
+import (
+	"fmt"
+	"os"
+)
+
 
 func main () {
-	// Here goes your code
+	_, err := os.ReadFile("file")
 	
+	if err == nil {
+		fmt.Println("File found.")
+	} else {
+		fmt.Println("File not found.")
+	}
 }

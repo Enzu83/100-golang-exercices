@@ -5,6 +5,9 @@ package main
 import "fmt"
 
 func main () {
-	// Here goes your code
-	fmt.Printf("...")
+	array := [5]string{}
+	array[0] = "Madeline"
+	array[1] = "Theo"
+	
+	fmt.Println(array)
 }
